@@ -1,0 +1,44 @@
+# Ignore Python bytecode and cache files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment folder
+venv/
+env/
+
+# Ignore secret files
+*.env
+config/settings_local.py  # If you have local settings
+
+# Ignore database files
+*.sqlite3
+db.sqlite3
+
+# Ignore logs and temporary files
+*.log
+*.pot
+*.pyc
+*.pyo
+*.swp
+*.swo
+*.swn
+
+# Ignore Django migrations compiled files
+**/migrations/__pycache__/
+**/migrations/*.pyc
+**/migrations/*.pyo
+
+# Ignore static and media files
+staticfiles/
+media/
+node_modules/
+
+# Ignore JetBrains (PyCharm) and VSCode files
+.idea/
+.vscode/
+
+# Ignore Docker build files
+*.tar
+
+myproject/__pycache__/
+./venv

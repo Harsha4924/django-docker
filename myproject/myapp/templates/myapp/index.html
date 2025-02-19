@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Docker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: yellow;
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+      }
+
+      /* Clear floats after the columns */
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: yellow;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Docker</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">YouTube</a></li>
+          <li>
+            <a href="#">LinkedIn</a>
+          </li>
+          <li><a href="#">Telegram</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>Docker</h1>
+        <p>
+          Docker uses the concept of containerization, we package our
+          application with dependencies. so that application can run in any
+          environments without any conflicts!, and the containers are light
+          weight because they use the resources from host os and they dont hold
+          the os just like V.M. On an EC2, if we are not using the docker, the
+          application dependencies will directly install on ec2 which might
+          cause dependency issues with in the applications, and if we are using
+          the docker, each application has the container and each container has
+          its own dependencies and there will be no conflicts. for production
+          env, its better to use the docker
+        </p>
+        <p>This is the breif of Docker</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>@Harsha</p>
+    </footer>
+  </body>
+</html>

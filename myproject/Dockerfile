@@ -36,4 +36,4 @@ COPY . .
 EXPOSE 8000
 
 # Run the Django application
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["/usr/bin/python3.10", "manage.py", "runserver", "0.0.0.0:8000"]
